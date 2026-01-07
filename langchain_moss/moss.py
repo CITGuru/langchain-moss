@@ -167,8 +167,8 @@ class MossVectorStore(VectorStore):
     Use as Retriever:
         ```python
         retriever = vector_store.as_retriever(
-            search_type="mmr",
-            search_kwargs={"k": 1, "fetch_k": 2, "lambda_mult": 0.5},
+            search_type="similarity_score_threshold",
+            search_kwargs={"k": 1, "score_threshold": 0.7},
         )
         retriever.invoke("thud")
         ```

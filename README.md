@@ -229,8 +229,8 @@ MossVectorStore(
 #### Retriever
 
 - `as_retriever(**kwargs)` - Get a LangChain retriever
-  - `search_type`: "similarity" or "mmr"
-  - `search_kwargs`: Dictionary of search parameters (e.g., `{"k": 3}`, `{"k": 3, "fetch_k": 5, "lambda_mult": 0.5}` for MMR)
+  - `search_type`: "similarity" or "similarity_score_threshold"
+  - `search_kwargs`: Dictionary of search parameters (e.g., `{"k": 3}`, `{"k": 3, "score_threshold": 0.7}`)
 
 #### Async Methods
 
