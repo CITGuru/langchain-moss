@@ -305,13 +305,19 @@ python examples/add_and_search.py
 python examples/retriever.py
 ```
 
+## Agent Skills
+
+See the [skills directory](skills/README.md) for complete working examples:
+
+- `skills/moss-index/SKILL.md` - Index/collection management
+- `skills/moss-semantic-search/SKILL.md` - Semantic search
+
 ## Requirements
 
 - Python >= 3.13
 - `inferedge-moss >= 1.0.0b8`
 - `langchain-core >= 1.2.6`
 - `pydantic >= 2.12.5`
-- `asyncio >= 4.0.0`
 
 ## License
 
